@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FragmentTabHost</string>
+
+    <string name="hint">这里输入的内容会在Tab2中TextView显示</string>
+    <string name="receive">接收Tab1中EditText传递过来的内容</string>
+    <string name="receive2">下面的TextView会实时收到Tab1中EditText输入的内容</string>
+    <string name="FragmentA">Fragment A</string>
+    <string name="FragmentB">Fragment B</string>
+    <string name="FragmentC">Fragment C</string>
+    <string name="FragmentD">Fragment D</string>
+    <string name="FragmentE">Fragment E</string>
+    <string name="Tab1">Tab1</string>
+    <string name="Tab2">Tab2</string>
+    <string name="Tab3">Tab3</string>
+    <string name="Tab4">Tab4</string>
+    <string name="Tab5">Tab5</string>
+</resources>

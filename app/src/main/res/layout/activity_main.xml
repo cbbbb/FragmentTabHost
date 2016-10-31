@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/MatchMatch.Vertical"
+              android:background="@android:color/white"
+              tools:context="com.bonc.fragmenttabhost.MainActivity"
+    >
+
+    <LinearLayout
+        style="@style/MatchMatch.Vertical"
+        >
+
+        <include layout="@layout/title_bar"/>
+
+        <FrameLayout
+            android:id="@+id/tab_content"
+            style="@style/MatchAuto"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.3"
+            android:background="@color/color_aaaaaa"/>
+
+        <RadioGroup
+            android:id="@+id/tabs_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_18"
+            android:layout_marginTop="@dimen/px_28"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <RadioButton
+                android:id="@+id/rb_government"
+                style="@style/Botton_Tab_Style"
+                android:checked="true"
+                android:drawableTop="@drawable/tab1"
+                android:text="@string/Tab1"/>
+
+            <RadioButton
+                android:id="@+id/rb_resource"
+                style="@style/Botton_Tab_Style"
+                android:drawableTop="@drawable/tab2"
+                android:text="@string/Tab2"/>
+
+            <RadioButton
+                android:id="@+id/rb_public"
+                style="@style/Botton_Tab_Style"
+                android:drawableTop="@drawable/tab3"
+                android:text="@string/Tab3"/>
+
+            <RadioButton
+                android:id="@+id/rb_advice"
+                style="@style/Botton_Tab_Style"
+                android:drawableTop="@drawable/tab4"
+                android:text="@string/Tab4"/>
+
+            <RadioButton
+                android:id="@+id/rb_internet"
+                style="@style/Botton_Tab_Style"
+                android:drawableTop="@drawable/tab5"
+                android:text="@string/Tab5"/>
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>
+
+
