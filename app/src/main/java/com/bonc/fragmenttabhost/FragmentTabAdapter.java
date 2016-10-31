@@ -8,12 +8,11 @@ import android.widget.RadioGroup;
 import java.util.List;
 
 public class FragmentTabAdapter implements RadioGroup.OnCheckedChangeListener{
-    private List<Fragment> fragments; // 一个tab页面对应一个Fragment
-    private RadioGroup rgs; // 用于切换tab
-    private FragmentActivity fragmentActivity; // Fragment所属的Activity
-    private int fragmentContentId; // Activity中所要被替换的区域的id
-
-    private int currentTab; // 当前Tab页面索引
+    private List<Fragment> fragments;           // 一个tab页面对应一个Fragment
+    private RadioGroup rgs;                     // 用于切换tab
+    private FragmentActivity fragmentActivity;  // Fragment所属的Activity
+    private int fragmentContentId;              // Activity中所要被替换的区域的id
+    private int currentTab;                     // 当前Tab页面索引
 
     private OnRgsExtraCheckedChangedListener onRgsExtraCheckedChangedListener; // 用于让调用者在切换tab时候增加新的功能
 
@@ -29,8 +28,6 @@ public class FragmentTabAdapter implements RadioGroup.OnCheckedChangeListener{
         ft.commit();
 
         rgs.setOnCheckedChangeListener(this);
-
-
     }
 
     @Override
@@ -44,8 +41,8 @@ public class FragmentTabAdapter implements RadioGroup.OnCheckedChangeListener{
 //                getCurrentFragment().onStop(); // 暂停当前tab
 
                 if(fragment.isAdded()){
-//                    fragment.onStart(); // 启动目标tab的onStart()
-                    fragment.onResume(); // 启动目标tab的onResume()
+                    fragment.onStart();     // 启动目标tab的onStart()
+                    fragment.onResume();    // 启动目标tab的onResume()
                 }else{
                     ft.add(fragmentContentId, fragment);
                 }

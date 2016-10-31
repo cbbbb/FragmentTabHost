@@ -13,7 +13,6 @@ public class TabBFm extends Fragment {
     private TextView textView;
     private MainActivity activity;
     private EditText editText;
-//    private Message msg;
 
     @Override
     public void onAttach(Activity activity) {
@@ -45,22 +44,22 @@ public class TabBFm extends Fragment {
         textView = (TextView) getView().findViewById(R.id.tv_textview);
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        System.out.println("BBBBBBBBBBB____onStart");
-    }
-
     /**
-     * 切换回本身Fragment时执行     onResume
+     * 切换回本身Fragment时执行     onStart      onResume
      * 屏幕解锁时执行               onStart      onResume
      * 回到应用时                   onStart      onResume
      */
     @Override
-    public void onResume() {
-        super.onResume();
+    public void onStart() {
+        super.onStart();
         //实时获取Tab1中EditText中的输入的内容
         textView.setText(editText.getText());
+        System.out.println("BBBBBBBBBBB____onStart");
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         System.out.println("BBBBBBBBBBB____onResume");
     }
 
