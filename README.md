@@ -5,4 +5,4 @@ FragmentTabHost + ViewPager实现Android底部Tab，并避免Fragment之间切�
 
 ##效果图
 
-![](https://github.com/KungFuDream/FragmentTabHost/blob/master/screenshots/fragment.gif)
+![](https://github.com/KungFuDream/FragmentTabHost/blob/master/screenshots/fragmenttabhost.gif)
